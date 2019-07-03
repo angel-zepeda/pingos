@@ -25,6 +25,7 @@
 		$respuesta['id_compra'] = $id_compra;	
 	}
 
+<<<<<<< HEAD
 
 	$consulta_compras_detalle = "INSERT INTO compras_detalle SET id_compras='{$id_compra}', id_producto='{$producto["id_productos"]}',
 	precio='{$producto["precio"]}', cantidad='{$producto["cantidad_productos"]}', importe='{$producto["importe"]}', descripcion='{$producto["descripcion"]}'; ";
@@ -33,6 +34,13 @@
 	$resultado_compra = mysqli_query($link, $consulta_compras_detalle);
 
 	
+=======
+
+	$consulta_compras_detalle = "INSERT INTO compras_detalle SET id_compras='{$id_compra}', id_producto='{$producto["id_productos"]}',
+	precio='{$producto["precio"]}', cantidad='{$producto["cantidad_productos"]}', importe='{$producto["importe"]}', descripcion='{$producto["descripcion"]}'; ";
+
+		
+>>>>>>> c4d6b0e4d06958528c62b371f4e36c84d7319410
 	echo json_encode($respuesta);
 
 
